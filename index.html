@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0a0a0a">
 <title>IB 2026 — Remy</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0a0a0a;
@@ -30,15 +30,15 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;height:100%}
-body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-size:14px;line-height:1.6;min-height:100%;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;min-height:100%;overflow-x:hidden}
 
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,10,10,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:0;height:56px}
-.brand{font-weight:800;font-size:15px;letter-spacing:-.02em;margin-right:auto;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.brand{font-family:'Playfair Display',serif;font-weight:700;font-size:16px;letter-spacing:-.01em;margin-right:auto;white-space:nowrap;display:flex;align-items:center;gap:8px}
 .brand-dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
 .ntabs{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;margin:0 16px}
 .ntabs::-webkit-scrollbar{display:none}
-.ntab{padding:0 14px;font-size:11px;font-weight:600;color:var(--dim);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:.15s;letter-spacing:.06em;text-transform:uppercase;height:56px;white-space:nowrap;font-family:'Syne',sans-serif}
+.ntab{padding:0 14px;font-size:11px;font-weight:600;color:var(--dim);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:.15s;letter-spacing:.06em;text-transform:uppercase;height:56px;white-space:nowrap;font-family:'DM Sans',sans-serif}
 .ntab:hover{color:var(--text)}
 .ntab.on{color:var(--text);border-bottom-color:var(--text)}
 .nav-prog{display:flex;align-items:center;gap:8px;flex-shrink:0}
@@ -51,57 +51,61 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
 
 /* COUNTDOWN */
 .countdown-wrap{margin-bottom:40px}
-.countdown-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.countdown-label{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:12px;font-family:'DM Sans',sans-serif}
 .countdown-row{display:flex;gap:12px;flex-wrap:wrap}
 .cd-block{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;text-align:center;min-width:72px;flex:1}
 .cd-num{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:500;line-height:1;color:var(--text)}
-.cd-lbl{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:4px}
-.cd-exam-tag{background:rgba(237,233,228,.06);border:1px solid rgba(237,233,228,.12);border-radius:100px;padding:4px 12px;font-size:11px;font-weight:600;color:var(--text);letter-spacing:.03em;margin-top:12px;display:inline-block}
+.cd-lbl{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:4px;font-family:'DM Sans',sans-serif}
+.cd-exam-tag{background:rgba(237,233,228,.06);border:1px solid rgba(237,233,228,.12);border-radius:100px;padding:4px 12px;font-size:11px;font-weight:600;color:var(--text);letter-spacing:.03em;margin-top:12px;display:inline-block;font-family:'DM Sans',sans-serif}
 
 /* HERO */
 .hero{margin-bottom:32px}
-.hero h1{font-size:42px;font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:8px}
-.hero h1 em{color:var(--dim);font-style:normal}
-.hero p{color:var(--dim);font-size:12px;font-weight:500;letter-spacing:.04em}
+.hero h1{font-family:'Playfair Display',serif;font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
+.hero h1 em{color:var(--dim);font-style:italic}
+.hero p{color:var(--dim);font-size:12px;font-weight:500;letter-spacing:.04em;font-family:'DM Sans',sans-serif}
 
 /* OVERALL PROGRESS */
 .overall-prog{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin-bottom:32px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.op-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);flex:1;min-width:120px}
+.op-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);flex:1;min-width:120px;font-family:'DM Sans',sans-serif}
 .op-nums{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;margin-right:auto}
 .op-pct{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:500}
 .op-bar-wrap{width:100%;height:3px;background:var(--border);border-radius:3px;margin-top:10px}
 .op-bar{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--econ),var(--bio));transition:.5s ease}
 
-/* SUBJECT TABS */
-.sub-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px}
-.sub-tab{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.04em;border:1.5px solid var(--border2);background:transparent;color:var(--dim);cursor:pointer;transition:.15s;font-family:'Syne',sans-serif}
-.sub-tab:hover{color:var(--text);border-color:var(--dimmer)}
-.sub-tab.on{color:#0a0a0a;border-color:transparent}
+/* SUBJECT TILES */
+.sub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-bottom:32px}
+.sub-tile{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;cursor:pointer;transition:.18s}
+.sub-tile:hover{border-color:var(--border2);transform:translateY(-1px)}
+.sub-tile-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sub-tile-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sub-tile-name{font-family:'DM Sans',sans-serif;font-weight:700;font-size:13px;letter-spacing:-.01em}
+.sub-tile-pct{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:500}
+.sub-tile-bar{width:100%;height:2px;background:var(--border);border-radius:2px}
+.sub-tile-fill{height:100%;border-radius:2px;transition:.5s}
+.sub-tile-sub{font-size:10px;color:var(--dim);margin-top:6px;font-weight:500;letter-spacing:.03em;font-family:'DM Sans',sans-serif}
 
 /* CHECKLIST CARDS */
-.cl-section{display:none}
-.cl-section.on{display:block}
 .cl-card{background:var(--s1);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:10px}
 .cl-head{padding:18px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none;transition:.15s}
 .cl-head:hover{background:var(--s2)}
 .cl-accent{width:3px;border-radius:2px;height:20px;flex-shrink:0}
-.cl-htitle{font-weight:700;font-size:15px;letter-spacing:-.01em;flex:1}
+.cl-htitle{font-family:'DM Sans',sans-serif;font-weight:700;font-size:15px;letter-spacing:-.01em;flex:1}
 .cl-hpct{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500;margin-left:auto;margin-right:12px}
 .cl-harr{color:var(--dimmer);font-size:18px;transition:transform .2s;font-weight:300}
 .cl-harr.open{transform:rotate(45deg)}
-.cl-sub-prog{font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--dim);margin-top:2px}
+.cl-sub-prog{font-size:10px;font-weight:500;letter-spacing:.04em;color:var(--dim);margin-top:2px;font-family:'DM Sans',sans-serif}
 .cl-body{display:none;padding:0}
 .cl-body.open{display:block}
-.cl-section-lbl{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dimmer);padding:14px 20px 4px;margin-top:2px}
+.cl-mini-bar{width:60px;height:2px;background:var(--border);border-radius:2px;flex-shrink:0}
+.cl-mini-fill{height:100%;border-radius:2px;transition:.4s}
 .cl-item{display:flex;align-items:flex-start;gap:10px;padding:7px 20px;cursor:pointer;transition:.13s;border-bottom:1px solid var(--border)}
 .cl-item:last-child{border-bottom:none}
 .cl-item:hover{background:rgba(255,255,255,.02)}
 .cl-item input[type=checkbox]{appearance:none;-webkit-appearance:none;width:15px;height:15px;flex-shrink:0;margin-top:2px;border:1.5px solid var(--border2);border-radius:4px;background:transparent;cursor:pointer;transition:.13s}
 .cl-item input[type=checkbox]:checked{background-size:72%;background-repeat:no-repeat;background-position:center;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6l3 3 5-5' stroke='%230a0a0a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E")}
-.cl-item label{font-size:12px;color:#aaa;line-height:1.55;cursor:pointer;flex:1;font-weight:400}
+.cl-item label{font-size:12px;color:#aaa;line-height:1.55;cursor:pointer;flex:1;font-weight:400;font-family:'DM Sans',sans-serif}
 .cl-item.done label{text-decoration:line-through;color:var(--dimmer)}
 
-/* Subject colors for checkboxes */
 .bio-card .cl-item input[type=checkbox]:checked{background-color:var(--bio);border-color:var(--bio)}
 .econ-card .cl-item input[type=checkbox]:checked{background-color:var(--econ);border-color:var(--econ)}
 .psych-card .cl-item input[type=checkbox]:checked{background-color:var(--psych);border-color:var(--psych)}
@@ -109,69 +113,78 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
 .eng-card .cl-item input[type=checkbox]:checked{background-color:var(--eng);border-color:var(--eng)}
 .ita-card .cl-item input[type=checkbox]:checked{background-color:var(--ita);border-color:var(--ita)}
 
-/* Mini progress bars in header */
-.cl-mini-bar{width:60px;height:2px;background:var(--border);border-radius:2px;flex-shrink:0}
-.cl-mini-fill{height:100%;border-radius:2px;transition:.4s}
+/* SUBJECT PROGRESS */
+.sub-prog-bar-wrap{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 
-/* SUBJECT OVERVIEW GRID */
-.sub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-bottom:32px}
-.sub-tile{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;cursor:pointer;transition:.18s}
-.sub-tile:hover{border-color:var(--border2);transform:translateY(-1px)}
-.sub-tile-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.sub-tile-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.sub-tile-name{font-weight:700;font-size:13px;letter-spacing:-.01em}
-.sub-tile-pct{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:500}
-.sub-tile-bar{width:100%;height:2px;background:var(--border);border-radius:2px}
-.sub-tile-fill{height:100%;border-radius:2px;transition:.5s}
-.sub-tile-sub{font-size:10px;color:var(--dim);margin-top:6px;font-weight:600;letter-spacing:.03em}
-
-/* DAILY LOG BUTTON */
-.log-fab{position:fixed;bottom:24px;right:20px;z-index:300;background:var(--text);color:var(--bg);border:none;border-radius:14px;padding:12px 18px;font-family:'Syne',sans-serif;font-size:12px;font-weight:800;letter-spacing:.05em;cursor:pointer;display:flex;align-items:center;gap:8px;box-shadow:0 4px 24px rgba(0,0,0,.5);transition:.18s}
+/* LOG FAB */
+.log-fab{position:fixed;bottom:24px;right:20px;z-index:300;background:var(--text);color:var(--bg);border:none;border-radius:14px;padding:12px 18px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;display:flex;align-items:center;gap:8px;box-shadow:0 4px 24px rgba(0,0,0,.5);transition:.18s}
 .log-fab:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.6)}
 .log-fab-dot{width:7px;height:7px;border-radius:50%;background:var(--econ);flex-shrink:0}
-.log-badge{background:var(--econ);color:#0a0a0a;border-radius:100px;padding:2px 7px;font-size:10px;font-weight:800;margin-left:2px;display:none}
+.log-badge{background:var(--econ);color:#0a0a0a;border-radius:100px;padding:2px 7px;font-size:10px;font-weight:700;margin-left:2px;display:none}
 
 /* MODAL OVERLAY */
 .log-overlay{position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-end;justify-content:center}
 .log-overlay.open{display:flex}
 @media(min-width:600px){.log-overlay{align-items:center}}
-.log-modal{background:var(--s1);border:1px solid var(--border2);border-radius:20px 20px 0 0;width:100%;max-width:640px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;animation:slideUp .22s ease}
-@media(min-width:600px){.log-modal{border-radius:20px;max-height:80vh}}
+.log-modal{background:var(--s1);border:1px solid var(--border2);border-radius:20px 20px 0 0;width:100%;max-width:680px;max-height:92vh;overflow:hidden;display:flex;flex-direction:column;animation:slideUp .22s ease}
+@media(min-width:600px){.log-modal{border-radius:20px;max-height:84vh}}
 @keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
 .log-modal-head{padding:20px 22px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;flex-shrink:0}
-.log-modal-title{font-size:16px;font-weight:800;letter-spacing:-.02em;flex:1}
+.log-modal-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:-.01em;flex:1}
 .log-modal-date{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);font-weight:500}
 .log-close{background:none;border:none;color:var(--dim);font-size:22px;cursor:pointer;padding:0;line-height:1;transition:.13s;font-weight:300}
 .log-close:hover{color:var(--text)}
 .log-modal-body{overflow-y:auto;flex:1;padding:0}
 
-/* TODAY'S PROGRESS PANEL (inside modal, top) */
-.log-today{padding:18px 22px;border-bottom:1px solid var(--border)}
-.log-today-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
-.log-today-count{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:500;line-height:1;margin-bottom:4px}
-.log-today-sub{font-size:11px;color:var(--dim);font-weight:600;margin-bottom:14px}
-.log-generate-btn{background:var(--text);color:var(--bg);border:none;border-radius:10px;padding:11px 20px;font-family:'Syne',sans-serif;font-size:12px;font-weight:800;letter-spacing:.04em;cursor:pointer;transition:.15s;width:100%}
-.log-generate-btn:hover{opacity:.88}
-.log-generate-btn:disabled{opacity:.35;cursor:not-allowed}
+/* LOG TABS */
+.log-tabs{display:flex;border-bottom:1px solid var(--border);flex-shrink:0}
+.log-tab{flex:1;padding:12px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);background:none;border:none;cursor:pointer;border-bottom:2px solid transparent;transition:.15s;margin-bottom:-1px}
+.log-tab.on{color:var(--text);border-bottom-color:var(--text)}
+.log-tab-panel{display:none}
+.log-tab-panel.on{display:block}
 
-/* GENERATED SUMMARY CARD */
-.log-summary-card{margin:0 22px 16px;background:var(--s2);border:1px solid var(--border2);border-radius:12px;overflow:hidden;display:none}
-.log-summary-card.visible{display:block}
-.log-summary-head{padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)}
-.log-summary-date-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;background:rgba(61,186,113,.15);color:var(--econ);border-radius:6px;padding:3px 8px}
-.log-summary-count-badge{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);margin-left:auto}
-.log-summary-items{padding:10px 0}
-.log-summary-subj{padding:6px 16px;display:flex;align-items:flex-start;gap:8px}
-.log-summary-subj-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:4px}
-.log-summary-subj-name{font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--dim);margin-bottom:2px;text-transform:uppercase}
-.log-summary-subj-items{font-size:11px;color:var(--text);line-height:1.55;font-weight:400}
-.log-copy-btn{margin:0 16px 12px;padding:8px 0;background:none;border:1px solid var(--border2);border-radius:8px;color:var(--dim);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;cursor:pointer;width:calc(100% - 32px);transition:.13s;letter-spacing:.03em}
-.log-copy-btn:hover{border-color:var(--dimmer);color:var(--text)}
+/* TODAY SECTION */
+.log-today{padding:18px 22px;border-bottom:1px solid var(--border)}
+.log-today-label{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px;font-family:'DM Sans',sans-serif}
+.log-today-count{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:500;line-height:1;margin-bottom:4px}
+.log-today-sub{font-size:11px;color:var(--dim);font-weight:500;margin-bottom:14px;font-family:'DM Sans',sans-serif}
+.log-btn-primary{background:var(--text);color:var(--bg);border:none;border-radius:10px;padding:11px 20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;transition:.15s;width:100%}
+.log-btn-primary:hover{opacity:.88}
+.log-btn-primary:disabled{opacity:.35;cursor:not-allowed}
+
+/* MANUAL LOG EDITOR */
+.manual-log-editor{padding:18px 22px}
+.mle-label{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px;font-family:'DM Sans',sans-serif}
+.mle-date-row{display:flex;gap:8px;margin-bottom:16px;align-items:flex-end;flex-wrap:wrap}
+.mle-date-input{background:var(--s2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:12px;padding:9px 12px;flex:1;min-width:150px;outline:none;transition:.15s}
+.mle-date-input:focus{border-color:var(--dim)}
+.mle-date-input::-webkit-calendar-picker-indicator{filter:invert(1);opacity:.5;cursor:pointer}
+.mle-note-input{background:var(--s2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:12px;padding:9px 12px;width:100%;outline:none;transition:.15s;resize:vertical;min-height:60px;margin-bottom:10px}
+.mle-note-input:focus{border-color:var(--dim)}
+.mle-subjects{display:flex;flex-direction:column;gap:4px;margin-bottom:14px}
+.mle-subject-group{background:var(--s2);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:4px}
+.mle-subj-head{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;user-select:none;transition:.13s}
+.mle-subj-head:hover{background:var(--s3)}
+.mle-subj-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.mle-subj-name{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;flex:1}
+.mle-subj-cnt{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)}
+.mle-subj-arr{color:var(--dimmer);font-size:12px;transition:.15s}
+.mle-subj-items{display:none;padding:4px 0;border-top:1px solid var(--border)}
+.mle-subj-items.open{display:block}
+.mle-item-row{display:flex;align-items:flex-start;gap:8px;padding:5px 14px;cursor:pointer;transition:.13s}
+.mle-item-row:hover{background:rgba(255,255,255,.02)}
+.mle-item-cb{appearance:none;-webkit-appearance:none;width:14px;height:14px;flex-shrink:0;margin-top:2px;border:1.5px solid var(--border2);border-radius:3px;background:transparent;cursor:pointer;transition:.13s}
+.mle-item-cb:checked{background-size:72%;background-repeat:no-repeat;background-position:center;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6l3 3 5-5' stroke='%230a0a0a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");background-color:#3dba71;border-color:#3dba71}
+.mle-item-label{font-family:'DM Sans',sans-serif;font-size:11px;color:#aaa;line-height:1.5;cursor:pointer;flex:1}
+.mle-save-btn{background:var(--text);color:var(--bg);border:none;border-radius:10px;padding:11px 20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;transition:.15s;width:100%;margin-bottom:6px}
+.mle-save-btn:hover{opacity:.88}
+.mle-clear-btn{background:none;border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:9px 20px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.04em;cursor:pointer;transition:.15s;width:100%;color:rgba(239,68,68,.5)}
+.mle-clear-btn:hover{border-color:rgba(239,68,68,.5);color:rgba(239,68,68,.8)}
 
 /* HISTORY SECTION */
 .log-history{padding:16px 22px 0}
-.log-history-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
-.log-history-empty{font-size:11px;color:var(--dimmer);padding-bottom:16px}
+.log-history-label{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:12px;font-family:'DM Sans',sans-serif}
+.log-history-empty{font-size:11px;color:var(--dimmer);padding-bottom:16px;font-family:'DM Sans',sans-serif}
 .log-hist-entry{background:var(--s2);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden}
 .log-hist-head{padding:10px 14px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;transition:.13s}
 .log-hist-head:hover{background:var(--s3)}
@@ -180,19 +193,20 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
 .log-hist-arr{color:var(--dimmer);font-size:14px;transition:.15s}
 .log-hist-body{display:none;padding:8px 14px 12px;border-top:1px solid var(--border)}
 .log-hist-body.open{display:block}
-.log-hist-subj-row{margin-bottom:6px}
-.log-hist-subj-name{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
-.log-hist-subj-items{font-size:11px;color:var(--text);line-height:1.55}
+
+/* SAVE TOAST */
+.save-toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--s2);border:1px solid var(--border2);border-radius:100px;padding:8px 16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--econ);opacity:0;transition:opacity .3s, transform .3s;pointer-events:none;z-index:500;white-space:nowrap}
+.save-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
 /* RESPONSIVE */
 @media(max-width:600px){
-  .hero h1{font-size:30px}
+  .hero h1{font-size:32px}
   .cd-num{font-size:24px}
   .cd-block{padding:12px 10px}
   .view{padding:76px 14px 40px}
   .nav{padding:0 14px}
   .ntab{padding:0 10px;font-size:10px}
-  .brand{font-size:13px}
+  .brand{font-size:14px}
   .sub-grid{grid-template-columns:1fr 1fr}
   .overall-prog{gap:12px}
 }
@@ -262,6 +276,9 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
 <div id="v-eng" class="view"></div>
 <div id="v-ita" class="view"></div>
 
+<!-- SAVE TOAST -->
+<div class="save-toast" id="saveToast">✓ Saved</div>
+
 <!-- DAILY LOG FAB -->
 <button class="log-fab" onclick="openLogModal()">
   <div class="log-fab-dot"></div>
@@ -279,25 +296,59 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
       </div>
       <button class="log-close" onclick="closeLogModal()">×</button>
     </div>
+
+    <!-- TABS -->
+    <div class="log-tabs">
+      <button class="log-tab on" onclick="switchLogTab('auto',this)">Auto Save</button>
+      <button class="log-tab" onclick="switchLogTab('manual',this)">Manual Entry</button>
+      <button class="log-tab" onclick="switchLogTab('history',this)">History</button>
+    </div>
+
     <div class="log-modal-body">
 
-      <!-- TODAY SECTION -->
-      <div class="log-today">
-        <div class="log-today-label">Today's progress</div>
-        <div class="log-today-count" id="logTodayCount">0</div>
-        <div class="log-today-sub" id="logTodaySub">items ticked since last log</div>
-        <button class="log-generate-btn" id="logGenBtn" onclick="generateDailyLog()">
-          ✦ Save today's summary
-        </button>
+      <!-- AUTO TAB -->
+      <div class="log-tab-panel on" id="ltab-auto">
+        <div class="log-today">
+          <div class="log-today-label">Today's progress</div>
+          <div class="log-today-count" id="logTodayCount">0</div>
+          <div class="log-today-sub" id="logTodaySub">items ticked since last log</div>
+          <button class="log-btn-primary" id="logGenBtn" onclick="generateDailyLog()">
+            ✦ Save today's summary
+          </button>
+        </div>
+        <div id="logSummaryWrap" style="padding:16px 0 0"></div>
       </div>
 
-      <!-- GENERATED SUMMARY (current day) -->
-      <div id="logSummaryWrap" style="padding:16px 0 0"></div>
+      <!-- MANUAL ENTRY TAB -->
+      <div class="log-tab-panel" id="ltab-manual">
+        <div class="manual-log-editor">
+          <div class="mle-label">Manual Log Entry</div>
+          <p style="font-size:11px;color:var(--dim);margin-bottom:14px;font-family:'DM Sans',sans-serif;line-height:1.6">Pick a date and tick everything you studied that day — useful if the auto log missed something or you're catching up.</p>
 
-      <!-- HISTORY -->
-      <div class="log-history">
-        <div class="log-history-label">Previous logs</div>
-        <div id="logHistoryList"></div>
+          <div class="mle-date-row">
+            <div style="flex:1">
+              <div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:5px;font-family:'DM Sans',sans-serif">Date</div>
+              <input type="date" class="mle-date-input" id="mleDate">
+            </div>
+          </div>
+
+          <div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:8px;font-family:'DM Sans',sans-serif">Optional note</div>
+          <textarea class="mle-note-input" id="mleNote" placeholder="e.g. Focused on Biology and half of Econ micro..."></textarea>
+
+          <div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:10px;font-family:'DM Sans',sans-serif">Topics covered <span id="mleTotalCount" style="color:var(--text);font-family:'JetBrains Mono',monospace">(0 selected)</span></div>
+          <div class="mle-subjects" id="mleSubjectsWrap"></div>
+
+          <button class="mle-save-btn" onclick="saveManualLog()">Save Manual Log</button>
+          <button class="mle-clear-btn" onclick="clearManualSelections()">Clear all selections</button>
+        </div>
+      </div>
+
+      <!-- HISTORY TAB -->
+      <div class="log-tab-panel" id="ltab-history">
+        <div class="log-history">
+          <div class="log-history-label">Previous logs</div>
+          <div id="logHistoryList"></div>
+        </div>
       </div>
 
     </div>
@@ -309,16 +360,31 @@ body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;font-s
 const SK = 'ibremy2026v3';
 let sv = {};
 try { sv = JSON.parse(localStorage.getItem(SK) || '{}'); } catch(e){}
-function save(){ try{ localStorage.setItem(SK, JSON.stringify(sv)); }catch(e){} }
+
+// Debounced auto-save
+let _saveTimer = null;
+function save(){
+  try{ localStorage.setItem(SK, JSON.stringify(sv)); }catch(e){}
+  showSaveToast();
+}
+function debouncedSave(){
+  clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(save, 300);
+}
+
+// Save toast
+function showSaveToast(){
+  const t = document.getElementById('saveToast');
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 1500);
+}
 
 // ─── COLOURS ───
 const COLS = { bio:'#9b7fe8', econ:'#3dba71', psych:'#f97b3d', maths:'#4fa3e3', eng:'#e84f8b', ita:'#f5b429' };
 
 // ─── CHECKLISTS DATA ───
 const SUBJECTS = [
-// ══════════════════════════════════════════
-// BIOLOGY HL
-// ══════════════════════════════════════════
 { id:'bio', name:'Biology HL', col:'bio',
   sections:[
     { s:'Theme A — Unity & Diversity', items:[
@@ -371,10 +437,6 @@ const SUBJECTS = [
     ]},
   ]
 },
-
-// ══════════════════════════════════════════
-// ECONOMICS HL
-// ══════════════════════════════════════════
 { id:'econ', name:'Economics HL', col:'econ',
   sections:[
     { s:'Unit 1 — Introduction to Economics', items:[
@@ -428,10 +490,6 @@ const SUBJECTS = [
     ]},
   ]
 },
-
-// ══════════════════════════════════════════
-// PSYCHOLOGY HL — UPDATED FROM SYLLABUS
-// ══════════════════════════════════════════
 { id:'psych', name:'Psychology HL', col:'psych',
   sections:[
     { s:'Assessment Overview', items:[
@@ -453,65 +511,61 @@ const SUBJECTS = [
     ]},
     { s:'Cognitive Approach — Core', items:[
       'Core assumption — mind as information-processing system; mental processes intervene between stimulus + response; these processes can be studied scientifically',
-      'TOPIC 1: Models of memory — MUST study TWO: Multi-store model (Atkinson + Shiffrin 1968): sensory register → STM (capacity ~7±2 items, duration ~30s) → LTM (unlimited capacity, long duration); rehearsal transfers; evaluate (oversimplified, passive). Working memory model (Baddeley + Hitch 1974): central executive (attentional controller), phonological loop (verbal/auditory), visuospatial sketchpad (visual/spatial), episodic buffer (integrates info); evaluate (more flexible but CE ill-defined)',
-      'TOPIC 1: Schema theory — schemas = mental frameworks organising knowledge/expectations; top-down processing; reconstructive memory; effort after meaning. Key study: Bartlett (1932) — War of the Ghosts — participants distorted story to fit cultural schemas',
-      'TOPIC 1: Thinking and decision-making — dual-process model (Kahneman): System 1 (fast, automatic, intuitive, prone to biases) vs System 2 (slow, controlled, deliberate, analytical); heuristics; framing; loss aversion; appraisal theory',
-      'TOPIC 2: Reconstructive memory — memory as active reconstruction not passive playback; influenced by schema processing; can change during storage + retrieval; confabulation; false memories',
-      'TOPIC 2: Cognitive biases — confirmation bias (seek confirming info); cognitive dissonance (keep cognitions consistent with actions); optimism bias (bad things won\'t happen to me); selective attention; illusory correlations; availability heuristic; anchoring; representativeness',
-      'TOPIC 3: Emotion and cognition — emotion + cognition intertwined (neuroscientific evidence); flashbulb memories (vivid, persistent but not necessarily accurate); amygdala\'s role in memory encoding under emotional arousal; state-dependent memory; appraisal theory',
-      'HL EXTENSION: Cognitive processing in a digital/technological world — positive + negative influence of technology on cognitive processes (e.g. multitasking, attention, memory offloading, social media); research methods used to study this',
+      'TOPIC 1: Models of memory — Multi-store model (Atkinson + Shiffrin 1968): sensory register → STM → LTM; Working memory model (Baddeley + Hitch 1974): central executive, phonological loop, visuospatial sketchpad, episodic buffer',
+      'TOPIC 1: Schema theory — schemas = mental frameworks; top-down processing; reconstructive memory. Key study: Bartlett (1932) — War of the Ghosts',
+      'TOPIC 1: Thinking and decision-making — dual-process model (Kahneman): System 1 (fast, automatic) vs System 2 (slow, deliberate); heuristics; framing; loss aversion',
+      'TOPIC 2: Reconstructive memory — memory as active reconstruction; influenced by schema; confabulation; false memories',
+      'TOPIC 2: Cognitive biases — confirmation bias; cognitive dissonance; optimism bias; selective attention; availability heuristic; anchoring',
+      'TOPIC 3: Emotion and cognition — flashbulb memories; amygdala\'s role in emotional memory encoding; state-dependent memory; appraisal theory',
+      'HL EXTENSION: Cognitive processing in a digital/technological world — positive + negative influence of technology on cognitive processes',
     ]},
     { s:'Sociocultural Approach — Core', items:[
       'Core assumptions — humans as social animals; need to belong; multiple social selves; categorise into groups; culture shapes behaviour + cognition',
-      'TOPIC 1: Social identity theory (Tajfel + Turner) — social categorisation, social identification, social comparison; in-group favouritism; out-group discrimination; SIT explains prejudice without need for conflict. Key study: Tajfel (1970) minimal group paradigm',
-      'TOPIC 1: Social cognitive theory (Bandura 1977) — observational learning (attention, retention, reproduction, motivation); Bobo Doll study; self-efficacy; reciprocal determinism (person ↔ behaviour ↔ environment)',
-      'TOPIC 1: Stereotypes — generalised, fixed ways of thinking about groups; stereotype formation (social categorisation); stereotype threat (Steele + Aronson 1995) — internalized stereotypes impair performance',
-      'TOPIC 2: Culture + behaviour/cognition — cultures share attitudes, behaviours, symbols communicated across generations; cultural groups have different norms/conventions; cultural context shapes perception, attribution, self-concept',
-      'TOPIC 2: Cultural dimensions (Hofstede) — individualism vs collectivism (effects on self-concept, attribution style, conformity, child-rearing); other dimensions: uncertainty avoidance, power/distance, masculinity/femininity, long/short term orientation, indulgence/restraint',
-      'TOPIC 3: Enculturation — how people learn norms + skills within own culture (implicit + explicit); effects on cognition + behaviour; Vygotsky\'s sociocultural theory as mechanism',
-      'TOPIC 3: Acculturation — change as result of contact with another culture; Berry\'s framework (integration, assimilation, separation, marginalisation); acculturative stress; universalism vs relativism; etic vs emic perspectives',
-      'HL EXTENSION: Globalisation — interaction of local + global influences on behaviour; spread of individualism; threat to cultural identities; research methods for studying globalisation\'s effects',
+      'TOPIC 1: Social identity theory (Tajfel + Turner) — social categorisation, social identification, social comparison; in-group favouritism. Key study: Tajfel (1970) minimal group paradigm',
+      'TOPIC 1: Social cognitive theory (Bandura 1977) — observational learning; Bobo Doll study; self-efficacy; reciprocal determinism',
+      'TOPIC 1: Stereotypes — generalised, fixed ways of thinking about groups; stereotype threat (Steele + Aronson 1995)',
+      'TOPIC 2: Culture + behaviour/cognition — cultures share attitudes communicated across generations; cultural context shapes perception, attribution, self-concept',
+      'TOPIC 2: Cultural dimensions (Hofstede) — individualism vs collectivism; other dimensions: uncertainty avoidance, power/distance, masculinity/femininity',
+      'TOPIC 3: Enculturation — how people learn norms within own culture; Vygotsky\'s sociocultural theory as mechanism',
+      'TOPIC 3: Acculturation — Berry\'s framework (integration, assimilation, separation, marginalisation); acculturative stress; etic vs emic perspectives',
+      'HL EXTENSION: Globalisation — interaction of local + global influences; spread of individualism; threat to cultural identities',
     ]},
     { s:'Research Methods (Paper 3)', items:[
-      'Quantitative methods — lab experiment (high control, low ecological validity); field experiment; quasi-experiment; natural experiment; correlational research (r value, cannot infer causation); surveys/questionnaires',
-      'Qualitative methods — case study; naturalistic observation; interviews (unstructured, semi-structured, focus groups); inductive content analysis (coding into themes)',
-      'Research designs — independent samples; repeated measures; matched pairs; twin studies (matched pairs)',
-      'Sampling techniques — random; convenience/opportunity; volunteer/self-selected; purposive; snowball',
-      'Ethics — informed consent; right to withdraw; confidentiality; anonymity; deception (only with justification + debriefing); no harm principle; debriefing',
-      'Evaluating research — reliability (consistency, test-retest); internal validity (control of extraneous variables); external validity (generalisation); credibility (qualitative); researcher bias; participant bias (demand characteristics, social desirability); sampling bias',
-      'Paper 3 Q1: Identify research method + 2 characteristics; describe sampling method used; suggest alternative sampling with justification',
+      'Quantitative methods — lab experiment; field experiment; quasi-experiment; correlational research (r value, cannot infer causation); surveys',
+      'Qualitative methods — case study; naturalistic observation; interviews (unstructured, semi-structured); inductive content analysis',
+      'Research designs — independent samples; repeated measures; matched pairs; twin studies',
+      'Sampling techniques — random; convenience/opportunity; volunteer; purposive; snowball',
+      'Ethics — informed consent; right to withdraw; confidentiality; anonymity; deception; no harm principle; debriefing',
+      'Evaluating research — reliability; internal validity; external validity; credibility (qualitative); researcher bias; participant bias; sampling bias',
+      'Paper 3 Q1: Identify research method + 2 characteristics; describe sampling method; suggest alternative sampling',
       'Paper 3 Q2: Ethical considerations applied in the study + additional ones that could apply',
-      'Paper 3 Q3: EITHER generalisation/transferability of findings OR credibility OR avoiding bias — choose ONE and develop in depth',
+      'Paper 3 Q3: EITHER generalisation/transferability OR credibility OR avoiding bias — develop one in depth',
     ]},
     { s:'Option A — Abnormal Psychology', items:[
-      'Definitions of abnormality — statistical infrequency (+ limitation: genius also "abnormal"); deviation from social norms (+ limitation: norms change, culture-specific); failure to function adequately — Rosenhan + Seligman criteria (+ limitation: subjective); deviation from ideal mental health — Jahoda criteria (+ limitation: almost everyone falls short)',
-      'Classification systems — DSM-5 (categorical, polythetic, US-based); ICD-11 (WHO, international); validity: do they measure what they claim to? Reliability: do different clinicians reach same diagnosis? Rosenhan (1973) "On being sane in insane places" — 8 pseudopatients admitted; questions diagnostic reliability',
-      'Clinical biases in diagnosis — confirmation bias; gender bias (women over-diagnosed with depression, hysteria); cultural bias (DSM based on Western norms; cultural expressions of distress vary)',
-      'Etiology of MDD — Biological: serotonin hypothesis (low serotonin → depression; evidence from SSRIs); HPA axis dysregulation (chronic cortisol → hippocampal damage); genetic vulnerability (twin studies, heritability ~40%). Cognitive: Beck\'s cognitive triad (negative views of self, world, future); learned helplessness (Seligman). Sociocultural: life events (Brown + Harris 1978 — social origins of depression); lack of social support; cultural variation in prevalence',
-      'Treatment of MDD — SSRIs (mechanism: block serotonin reuptake → more serotonin in synapse; evaluation: effective, fewer side effects than TCAs, but takes weeks, not effective for all, relapse on stopping). CBT (Beck; identify + challenge negative automatic thoughts; restructure cognitive distortions; effective + long-lasting, but requires motivation + access). Sociocultural treatments (group therapy, community support, culturally-adapted therapy). Compare effectiveness — combination most effective; SSRIs faster, CBT more durable',
+      'Definitions of abnormality — statistical infrequency; deviation from social norms; failure to function adequately (Rosenhan + Seligman); deviation from ideal mental health (Jahoda)',
+      'Classification systems — DSM-5; ICD-11; validity vs reliability; Rosenhan (1973) "On being sane in insane places"',
+      'Clinical biases in diagnosis — confirmation bias; gender bias; cultural bias',
+      'Etiology of MDD — Biological: serotonin hypothesis; HPA axis dysregulation; genetic vulnerability. Cognitive: Beck\'s cognitive triad; learned helplessness. Sociocultural: life events; lack of social support',
+      'Treatment of MDD — SSRIs (mechanism + evaluation); CBT (Beck; evaluate); sociocultural treatments; compare effectiveness — combination most effective',
     ]},
     { s:'Option B — Developmental Psychology', items:[
-      'Piaget — 4 stages: sensorimotor (0–2, object permanence ~8 months), preoperational (2–7, egocentrism — 3 mountains task, centration, animism, lack of conservation), concrete operational (7–11, conservation, reversibility, less egocentric), formal operational (12+, abstract + hypothetical reasoning). Key concepts: schema, assimilation, accommodation, equilibration. Criticisms: underestimated children (Baillargeon — object permanence at 3.5 months); ignored social/cultural factors; Western bias',
-      'Vygotsky — Zone of Proximal Development (ZPD): gap between what child can do independently vs with MKO guidance. Scaffolding: temporary, adjusted support gradually withdrawn. Language precedes thought (vs Piaget: thought precedes language). Inner speech as cognitive tool. Cultural tools + social interaction drive development. Cross-cultural research support',
-      'Bowlby — monotropy (primary attachment most important); evolutionary basis (innate attachment behavioural system); critical period (birth–3 years); deprivation effects (44 Juvenile Thieves — maternal deprivation → affectionless psychopathy); internal working model (template for future relationships). Evaluation: Romanian orphan studies (Rutter); supports biological basis; monotropy critiqued (multiple attachments possible)',
-      'Ainsworth — Strange Situation (1978): standardised lab procedure; separates child from caregiver; introduces stranger; observes response. 3 types: secure (70% — uses caregiver as base, distress on separation, comforted on return); anxious-avoidant (20% — little distress, ignores caregiver); anxious-ambivalent (10% — very distressed, not comforted, clingy). Cross-cultural replication (Van Ijzendoorn + Kroonenberg 1988) — same types but proportions vary',
-      'Bronfenbrenner — ecological systems: microsystem (direct environment: family, school, peers); mesosystem (interactions between microsystems: parent-teacher link); exosystem (indirect environments affecting child: parent\'s workplace); macrosystem (broader culture, laws, ideology, SES). Chronosystem: change over time. Evaluation: comprehensive; captures complexity; difficult to test empirically',
-      'Developmental option — exam essays use AO3 command terms (discuss, evaluate, to what extent). Always integrate biological, cognitive AND sociocultural perspectives into answers',
+      'Piaget — 4 stages: sensorimotor, preoperational, concrete operational, formal operational; schema, assimilation, accommodation, equilibration; criticisms (Baillargeon)',
+      'Vygotsky — Zone of Proximal Development (ZPD); scaffolding; language precedes thought; cultural tools + social interaction',
+      'Bowlby — monotropy; evolutionary basis; critical period; deprivation (44 Juvenile Thieves); internal working model',
+      'Ainsworth — Strange Situation (1978); 3 attachment types: secure, anxious-avoidant, anxious-ambivalent; cross-cultural replication',
+      'Bronfenbrenner — ecological systems: microsystem, mesosystem, exosystem, macrosystem; chronosystem',
+      'Developmental option — integrate biological, cognitive AND sociocultural perspectives into essays',
     ]},
     { s:'ERQ Practice + Exam Skills', items:[
-      'SAQ structure (9 marks): answer command term precisely; name + describe ONE study in detail; link study explicitly to question; ~250 words',
-      'Essay structure (22 marks): Introduction (define approach, state thesis, preview arguments). Body paragraphs: claim → mechanism → research evidence (describe AND evaluate) → link to question. Counter-argument paragraph. Conclusion (balanced evaluation + extent statement)',
-      'Criterion D critical thinking — evaluate: methodology (design, sampling, ethics); triangulation (multiple methods/studies); assumptions + biases; contradictory evidence; areas of uncertainty',
-      'Practice essay planned: "Discuss the extent to which biology determines behaviour" — bio arguments (localisation/neuroplasticity/neurotransmitters) + counter (cognitive/sociocultural) + conclusion',
-      'Practice essay planned: Option A — one of: "Evaluate the effectiveness of treatment for ONE disorder" OR "Discuss explanations for ONE disorder" OR "Discuss validity/reliability of diagnosis"',
-      'Practice essay planned: Option B — one of: "Discuss cognitive development in childhood" OR "Evaluate the role of attachment in development" OR "Discuss factors influencing social development"',
+      'SAQ structure (9 marks): answer command term precisely; ONE study in detail; link to question; ~250 words',
+      'Essay structure (22 marks): Intro (define approach, thesis, preview). Body: claim → mechanism → research → link. Counter-argument. Conclusion',
+      'Criterion D critical thinking — evaluate: methodology; triangulation; assumptions + biases; contradictory evidence',
+      'Practice essay planned: "Discuss the extent to which biology determines behaviour"',
+      'Practice essay planned: Option A — evaluate effectiveness of treatment OR discuss explanations for one disorder',
+      'Practice essay planned: Option B — discuss cognitive development OR evaluate role of attachment',
     ]},
   ]
 },
-
-// ══════════════════════════════════════════
-// MATHS AI SL — UPDATED FROM SYLLABUS
-// ══════════════════════════════════════════
 { id:'maths', name:'Maths AI SL', col:'maths',
   sections:[
     { s:'Assessment Structure', items:[
@@ -521,53 +575,53 @@ const SUBJECTS = [
       'Formula booklet provided: area/volume, trig, finance, stats, calculus rules — know what IS and ISN\'T in it',
     ]},
     { s:'Topic 1 — Number & Algebra', items:[
-      '1.1 Standard form — a × 10^k (1 ≤ a < 10); calculator notation (5.2E30) NOT acceptable in exam answers; must write 5.2 × 10³⁰',
-      '1.2 Arithmetic sequences + series — nth term: u_n = u₁ + (n−1)d; Sum: S_n = n/2(2u₁ + (n−1)d); applications: simple interest, salary increases',
-      '1.3 Geometric sequences + series — nth term: u_n = u₁ × r^(n−1); Sum: S_n = u₁(r^n − 1)/(r−1); applications: compound interest, population growth, depreciation',
-      '1.4 Financial applications — compound interest (yearly, half-yearly, quarterly, monthly); annual depreciation; real value with inflation; use GDC Financial menu',
-      '1.5 Laws of exponents (integer) + logs base 10 and e — aˣ = b ↔ log_a(b) = x; ln x = log_e(x); evaluate numerically with GDC',
-      '1.6 Approximation — decimal places, significant figures, bounds; percentage error; if x = 4.1 to 1 dp → 4.05 ≤ x < 4.15; max % error calculations',
-      '1.7 Amortisation + annuities — use GDC financial packages; payments at end of period; interpret outputs (PMT, FV, PV, n, I%)',
-      '1.8 Technology for systems of equations + polynomials — systems up to 3 variables; polynomial equations; always unique solution in exam questions',
+      '1.1 Standard form — a × 10^k (1 ≤ a < 10); calculator notation NOT acceptable in exam; must write 5.2 × 10³⁰',
+      '1.2 Arithmetic sequences + series — nth term: u_n = u₁ + (n−1)d; Sum: S_n = n/2(2u₁ + (n−1)d)',
+      '1.3 Geometric sequences + series — nth term: u_n = u₁ × r^(n−1); Sum: S_n = u₁(r^n − 1)/(r−1)',
+      '1.4 Financial applications — compound interest; annual depreciation; real value with inflation; use GDC Financial menu',
+      '1.5 Laws of exponents + logs base 10 and e — aˣ = b ↔ log_a(b) = x; ln x = log_e(x)',
+      '1.6 Approximation — decimal places, significant figures, bounds; percentage error',
+      '1.7 Amortisation + annuities — use GDC financial packages; payments at end of period; interpret outputs',
+      '1.8 Technology for systems of equations + polynomials — systems up to 3 variables; polynomial equations',
     ]},
     { s:'Topic 2 — Functions', items:[
-      '2.1 Equation of straight line — y = mx + c; ax + by + d = 0; y − y₁ = m(x − x₁); gradient; parallel (m₁ = m₂); perpendicular (m₁ × m₂ = −1)',
-      '2.2 Functions — f(x) notation; domain; range; inverse f⁻¹(x) as reflection in y = x; domain of f⁻¹ = range of f',
+      '2.1 Equation of straight line — y = mx + c; gradient; parallel (m₁ = m₂); perpendicular (m₁ × m₂ = −1)',
+      '2.2 Functions — f(x) notation; domain; range; inverse f⁻¹(x) as reflection in y = x',
       '2.3 Graphs of functions — sketching vs drawing distinction; use GDC; label all axes + key features',
-      '2.4 Key features of graphs — max/min; intercepts; symmetry; vertex; zeros/roots; vertical + horizontal asymptotes; intersection of two curves using GDC',
-      '2.5 Modelling — Linear f(x) = mx + c; Quadratic f(x) = ax² + bx + c (axis of symmetry x = −b/2a, vertex, zeros); Exponential f(x) = kaˣ + c; Direct/inverse variation f(x) = axⁿ; Sinusoidal f(x) = a sin(bx) + d (amplitude = |a|, period = 360°/b, principal axis y = d)',
-      '2.6 Modelling skills — recognise model type from data; determine domain; find parameters (simultaneous equations or GDC regression); test + reflect on model; dangers of extrapolation; up to 3 simultaneous linear equations',
+      '2.4 Key features of graphs — max/min; intercepts; asymptotes; zeros; intersection using GDC',
+      '2.5 Modelling — Linear; Quadratic (axis of symmetry, vertex); Exponential; Direct/inverse variation; Sinusoidal (amplitude, period, principal axis)',
+      '2.6 Modelling skills — recognise model type; determine domain; find parameters; test + reflect; dangers of extrapolation',
     ]},
     { s:'Topic 3 — Geometry & Trigonometry', items:[
-      '3.1 3D geometry — distance + midpoint between two 3D points; volumes + surface areas of pyramids, cones, spheres, hemispheres, combinations; SL: right-angle trig only in 3D',
-      '3.2 Sine rule: a/sinA = b/sinB = c/sinC; Cosine rule: c² = a² + b² − 2ab cosC; Area = ½ab sinC; SL: no ambiguous case of sine rule',
-      '3.3 Applications of trig — angles of elevation/depression; bearings; construct diagrams from written descriptions; right + non-right angled trig applications',
-      '3.4 Circle — arc length = (θ/360°) × 2πr; sector area = (θ/360°) × πr²; SL: degrees only (radians NOT required at SL)',
-      '3.5 Equations of perpendicular bisectors — from two given points or from midpoint + gradient; link to Voronoi diagrams',
-      '3.6 Voronoi diagrams — sites, vertices, edges, cells; nearest-neighbour interpolation; adding a new site; "toxic waste dump" problem; solution point at intersection of 3 perpendicular bisectors',
+      '3.1 3D geometry — distance + midpoint between 3D points; volumes + surface areas of pyramids, cones, spheres, hemispheres',
+      '3.2 Sine rule + Cosine rule + Area formula — a/sinA = b/sinB; c² = a² + b² − 2ab cosC; Area = ½ab sinC',
+      '3.3 Applications of trig — angles of elevation/depression; bearings; construct diagrams from descriptions',
+      '3.4 Circle — arc length = (θ/360°) × 2πr; sector area = (θ/360°) × πr²; SL: degrees only',
+      '3.5 Equations of perpendicular bisectors — from two points or from midpoint + gradient',
+      '3.6 Voronoi diagrams — sites, vertices, edges, cells; nearest-neighbour; adding a new site; toxic waste dump problem',
     ]},
     { s:'Topic 4 — Statistics & Probability', items:[
-      '4.1 Data concepts + sampling — population, sample; discrete/continuous; outlier = data point > 1.5 × IQR from nearest quartile; sampling methods: simple random, convenience, systematic, quota, stratified',
-      '4.2 Data presentation — frequency distributions; histograms (equal class intervals); cumulative frequency graphs; box-and-whisker plots (outliers marked ×); comparing distributions',
-      '4.3 Measures of central tendency + dispersion — mean (grouped: use midpoints); median; mode; IQR; standard deviation; variance = sd²; effect of linear transformations on mean + sd',
-      '4.4 Pearson\'s r (−1 to +1) + linear regression — scatter diagrams; regression line y = ax + b; interpret a (slope) + b (y-intercept); predictions; correlation ≠ causation; Pearson\'s r for linear only',
-      '4.5 Probability basics — trial, outcome, relative frequency; P(A) = n(A)/n(U); complementary events P(A\') = 1 − P(A); expected number = n × P(A)',
-      '4.6 Combined events + conditional probability — P(A∪B) = P(A) + P(B) − P(A∩B); mutually exclusive: P(A∩B) = 0; conditional: P(A|B) = P(A∩B)/P(B); independent: P(A∩B) = P(A)P(B); Venn + tree diagrams; with/without replacement',
-      '4.7 Discrete random variables — probability distributions; expected value E(X) = Σx·P(X=x); E(X) = 0 means fair game',
-      '4.8 Binomial distribution B(n,p) — conditions: fixed trials, independent, constant p, two outcomes; mean = np; variance = np(1−p); use GDC Distribution menu for probabilities',
-      '4.9 Normal distribution N(μ, σ²) — bell-shaped, symmetric about μ; 68%/95%/99.7% rule; use GDC for probabilities + inverse normal; interpret in context',
-      '4.10 Spearman\'s rank correlation r_s — use GDC; average tied ranks; use for any monotonic relationship; less sensitive to outliers than Pearson\'s r',
-      '4.11 Hypothesis testing + chi-squared — formulate H₀ and H₁; significance levels; p-values; χ² test for independence (contingency tables; df = (rows−1)(cols−1)); χ² goodness of fit (df = n−1); t-test for comparing two means; one-tailed vs two-tailed; compare p-value to α',
+      '4.1 Data concepts + sampling — discrete/continuous; outlier = data point > 1.5 × IQR; sampling methods',
+      '4.2 Data presentation — frequency distributions; histograms; cumulative frequency graphs; box-and-whisker plots',
+      '4.3 Measures of central tendency + dispersion — mean; median; mode; IQR; standard deviation; variance = sd²',
+      '4.4 Pearson\'s r (−1 to +1) + linear regression — regression line y = ax + b; interpret a + b; correlation ≠ causation',
+      '4.5 Probability basics — trial, outcome, relative frequency; P(A) = n(A)/n(U); complementary events',
+      '4.6 Combined events + conditional probability — P(A∪B) = P(A) + P(B) − P(A∩B); conditional: P(A|B) = P(A∩B)/P(B)',
+      '4.7 Discrete random variables — probability distributions; expected value E(X) = Σx·P(X=x)',
+      '4.8 Binomial distribution B(n,p) — conditions; mean = np; variance = np(1−p); use GDC',
+      '4.9 Normal distribution N(μ, σ²) — bell-shaped; 68%/95%/99.7% rule; use GDC for probabilities + inverse normal',
+      '4.10 Spearman\'s rank correlation r_s — use GDC; average tied ranks; less sensitive to outliers than Pearson\'s',
+      '4.11 Hypothesis testing + chi-squared — H₀ and H₁; p-values; χ² test for independence; t-test; p-value vs α',
     ]},
     { s:'Topic 5 — Calculus', items:[
-      '5.1 Introduction to calculus — derivative as gradient function + rate of change; notation dy/dx, f\'(x); limit as gradient of tangent; estimate from table or graph',
-      '5.2 Increasing + decreasing functions — f\'(x) > 0: increasing; f\'(x) = 0: stationary; f\'(x) < 0: decreasing; graphical interpretation',
-      '5.3 Differentiation of polynomials — d/dx(axⁿ) = anxⁿ⁻¹; derivative of sums; all integer exponents',
-      '5.4 Tangents + normals — tangent equation: y − y₀ = f\'(x₀)(x − x₀); gradient of normal = −1/f\'(x₀); use GDC + analytic methods',
-      '5.5 Integration as antidifferentiation — ∫axⁿ dx = axⁿ⁺¹/(n+1) + C (n ≠ −1); find C from boundary condition; definite integrals using GDC; area under curve above x-axis',
-      '5.6 Local maxima + minima — solve f\'(x) = 0; use GDC to find + classify; local ≠ global max/min',
-      '5.7 Optimisation in context — maximise profit/volume, minimise cost; set up function from context; differentiate + solve',
-      '5.8 Trapezoidal rule — Area ≈ h/2 × [y₀ + 2(y₁ + y₂ + … + y_{n−1}) + y_n]; equal width intervals h; from table of values or function',
+      '5.1 Introduction to calculus — derivative as gradient function + rate of change; notation dy/dx, f\'(x)',
+      '5.2 Increasing + decreasing functions — f\'(x) > 0: increasing; f\'(x) = 0: stationary; f\'(x) < 0: decreasing',
+      '5.3 Differentiation of polynomials — d/dx(axⁿ) = anxⁿ⁻¹; derivative of sums',
+      '5.4 Tangents + normals — tangent equation: y − y₀ = f\'(x₀)(x − x₀); gradient of normal = −1/f\'(x₀)',
+      '5.5 Integration as antidifferentiation — ∫axⁿ dx = axⁿ⁺¹/(n+1) + C; definite integrals using GDC; area under curve',
+      '5.6 Local maxima + minima — solve f\'(x) = 0; use GDC to find + classify',
+      '5.7 Optimisation in context — maximise profit/volume, minimise cost; set up function; differentiate + solve',
+      '5.8 Trapezoidal rule — Area ≈ h/2 × [y₀ + 2(y₁ + … + y_{n−1}) + y_n]; equal width intervals h',
     ]},
     { s:'Exam Practice + GDC Skills', items:[
       'Past paper session 1 complete — weak areas noted',
@@ -576,18 +630,14 @@ const SUBJECTS = [
       'Past paper session 4 complete — weak areas noted',
       'Past paper session 5 complete — weak areas noted',
       'GDC: solve system of 3 equations — Equation → Simultaneous → 3 unknowns',
-      'GDC: regression (linear, quadratic, exponential) — Statistics → Calc → select model → EXE',
-      'GDC: normal distribution probability + inverse — Statistics → Dist → NORM → Ncd / InvN',
-      'GDC: binomial probability — Statistics → Dist → BINM → Bpd (P=x) or Bcd (P≤x)',
-      'GDC: definite integral — Graph menu → enter function → CALC (F6) → ∫dx → set bounds',
-      'Key formulas to know from memory (not in booklet): arithmetic + geometric nth term + sum; compound interest formula; Pearson\'s r interpretation; normal 68-95-99.7 rule; trapezoidal rule',
+      'GDC: regression — Statistics → Calc → select model',
+      'GDC: normal distribution — Statistics → Dist → NORM → Ncd / InvN',
+      'GDC: binomial probability — Statistics → Dist → BINM → Bpd or Bcd',
+      'GDC: definite integral — Graph menu → CALC → ∫dx → set bounds',
+      'Key formulas from memory (not in booklet): arithmetic + geometric nth term; compound interest; 68-95-99.7 rule; trapezoidal rule',
     ]},
   ]
 },
-
-// ══════════════════════════════════════════
-// ENGLISH SL
-// ══════════════════════════════════════════
 { id:'eng', name:'English SL', col:'eng',
   sections:[
     { s:'Home Fire — Reading (9 chapters in 5 sections)', items:[
@@ -622,32 +672,28 @@ const SUBJECTS = [
     ]},
   ]
 },
-
-// ══════════════════════════════════════════
-// ITALIAN AB INITIO SL
-// ══════════════════════════════════════════
 { id:'ita', name:'Italian ab initio', col:'ita',
   sections:[
     { s:'Grammar', items:[
-      'Present tense (-are verbs) — all 6 forms; irregular patterns: andare (vado/vai/va/andiamo/andate/vanno), fare (faccio...), stare',
+      'Present tense (-are verbs) — all 6 forms; irregular patterns: andare, fare, stare',
       'Present tense (-ere and -ire verbs) — conjugations practised; irregular -ire verbs (capire → capisco)',
       'Essere vs avere — all forms; when to use each as auxiliary in passato prossimo',
       'Adjective agreement — gender + number endings: -o/-a/-i/-e; irregular adjectives (bello, buono, grande)',
-      'Passato prossimo with avere — formation (avere + past participle); 10 common irregular past participles (fatto, detto, messo, preso, visto, scritto, letto, aperto, chiuso, stato)',
-      'Passato prossimo with essere — motion + state verbs (andare, venire, partire, arrivare, uscire, nascere, morire); past participle must agree in gender + number with subject',
-      'Imperfetto — conjugation for all verb types; irregular essere (ero/eri/era/eravamo/eravate/erano); use for habitual past (ogni giorno andavo...) + descriptions in past + background actions',
-      'Modal verbs — volere (voglio/vuoi/vuole/vogliamo/volete/vogliono), potere, dovere + infinitive; use in context',
+      'Passato prossimo with avere — formation; 10 common irregular past participles (fatto, detto, messo, preso, visto, scritto, letto, aperto, chiuso, stato)',
+      'Passato prossimo with essere — motion + state verbs; past participle must agree in gender + number with subject',
+      'Imperfetto — conjugation for all verb types; irregular essere; use for habitual past + descriptions + background actions',
+      'Modal verbs — volere, potere, dovere + infinitive; use in context',
     ]},
     { s:'Vocabulary Topics', items:[
       'Family and relationships — la famiglia, i genitori, il fidanzato, sposarsi, i parenti, il fratello, la sorella',
       'School and education — le materie, gli esami, il professore, il voto, studiare, la biblioteca',
-      'Food and drink — il pasto, la colazione, il ristorante, ordinare, adjectives for food (dolce, amaro, piccante, saporito)',
+      'Food and drink — il pasto, la colazione, il ristorante, ordinare, adjectives for food (dolce, amaro, piccante)',
       'Town and transport — il negozio, la piazza, il treno, la stazione, la fermata, a piedi, in autobus',
       'Travel and holidays — il biglietto, l\'albergo, prenotare, andare all\'estero, il viaggio, la valigia',
-      'Health and body — il corpo, la salute, il medico, avere mal di (testa/stomaco), la febbre, sentirsi male, guarire',
-      'Work and future plans — la carriera, il colloquio, guadagnare, vorrei diventare, in futuro, ho intenzione di',
-      'Media and technology — i social media, internet, condividere, navigare in rete, il cellulare, dipendente dalla tecnologia',
-      'Environment and global issues — il cambiamento climatico, l\'ambiente, riciclare, le energie rinnovabili, la deforestazione, proteggere',
+      'Health and body — il corpo, la salute, il medico, avere mal di (testa/stomaco), la febbre, sentirsi male',
+      'Work and future plans — la carriera, il colloquio, guadagnare, vorrei diventare, in futuro',
+      'Media and technology — i social media, internet, condividere, navigare in rete, il cellulare',
+      'Environment and global issues — il cambiamento climatico, l\'ambiente, riciclare, le energie rinnovabili',
     ]},
     { s:'Writing Practice', items:[
       'Present tense paragraph written (routine or descriptions)',
@@ -666,6 +712,14 @@ function init(){
   SUBJECTS.forEach(sub => buildSubjectView(sub));
   updateAll();
   startCountdown();
+  buildManualLogEditor();
+  // Set default date for manual log to today
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth()+1).padStart(2,'0');
+  const dd = String(today.getDate()).padStart(2,'0');
+  const mleDate = document.getElementById('mleDate');
+  if(mleDate) mleDate.value = `${yyyy}-${mm}-${dd}`;
 }
 
 function buildSubGrid(){
@@ -692,24 +746,20 @@ function buildSubGrid(){
 
 function buildSubjectView(sub){
   const view = document.getElementById('v-' + sub.id);
-  // Hero
   const hero = document.createElement('div');
   hero.className = 'hero';
-  hero.innerHTML = `<h1>${sub.name.split(' ')[0]}<br><em>${sub.name.split(' ').slice(1).join(' ')}</em></h1><p style="color:var(--dim);font-size:12px;font-weight:600;letter-spacing:.04em" id="hero-sub-${sub.id}">Loading...</p>`;
+  hero.innerHTML = `<h1>${sub.name.split(' ')[0]}<br><em>${sub.name.split(' ').slice(1).join(' ')}</em></h1><p id="hero-sub-${sub.id}">Loading...</p>`;
   view.appendChild(hero);
 
-  // Overall card progress bar
   const progBar = document.createElement('div');
-  progBar.style.cssText = 'background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap';
-  progBar.innerHTML = `<div style="flex:1"><div style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:6px">Subject Progress</div><div style="width:100%;height:3px;background:var(--border);border-radius:3px"><div id="sp-bar-${sub.id}" style="height:100%;border-radius:3px;background:${COLS[sub.col]};transition:.5s;width:0%"></div></div></div><div id="sp-pct-${sub.id}" style="font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:500;color:${COLS[sub.col]}">0%</div>`;
+  progBar.className = 'sub-prog-bar-wrap';
+  progBar.innerHTML = `<div style="flex:1"><div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:6px;font-family:'DM Sans',sans-serif">Subject Progress</div><div style="width:100%;height:3px;background:var(--border);border-radius:3px"><div id="sp-bar-${sub.id}" style="height:100%;border-radius:3px;background:${COLS[sub.col]};transition:.5s;width:0%"></div></div></div><div id="sp-pct-${sub.id}" style="font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:500;color:${COLS[sub.col]}">0%</div>`;
   view.appendChild(progBar);
 
-  // Sections
   sub.sections.forEach((sec, si) => {
     const card = document.createElement('div');
     card.className = `cl-card ${sub.col}-card`;
     card.id = `card-${sub.id}-${si}`;
-
     const itemCount = sec.items.length;
     const head = document.createElement('div');
     head.className = 'cl-head';
@@ -737,10 +787,11 @@ function buildSubjectView(sub){
       cb.addEventListener('change', function(){
         sv[key] = this.checked;
         row.classList.toggle('done', this.checked);
-        save();
+        debouncedSave();
         updateSection(sub.id, si);
         updateSubject(sub);
         updateAll();
+        updateLogBadge();
       });
       body.appendChild(row);
     });
@@ -783,14 +834,12 @@ function updateSubject(sub){
     });
   });
   const pct = Math.round(done / Math.max(tot,1) * 100);
-  // Update subject view bar
   const bar = document.getElementById(`sp-bar-${sub.id}`);
   const pctEl = document.getElementById(`sp-pct-${sub.id}`);
   const heroSub = document.getElementById(`hero-sub-${sub.id}`);
   if(bar) bar.style.width = pct + '%';
   if(pctEl) pctEl.textContent = pct + '%';
   if(heroSub) heroSub.textContent = `${done} / ${tot} TOPICS · ${pct}% COMPLETE`;
-  // Update tile
   const tilePct = document.getElementById(`tile-pct-${sub.id}`);
   const tileBar = document.getElementById(`tile-bar-${sub.id}`);
   const tileSub = document.getElementById(`tile-sub-${sub.id}`);
@@ -855,6 +904,17 @@ function startCountdown(){
   setInterval(update, 1000);
 }
 
+// ─── LOG TAB SWITCHING ───
+function switchLogTab(tab, btn){
+  document.querySelectorAll('.log-tab').forEach(t => t.classList.remove('on'));
+  document.querySelectorAll('.log-tab-panel').forEach(p => p.classList.remove('on'));
+  if(btn) btn.classList.add('on');
+  const panel = document.getElementById('ltab-' + tab);
+  if(panel) panel.classList.add('on');
+  if(tab === 'history') renderHistory();
+  if(tab === 'auto') refreshAutoTab();
+}
+
 // ─── DAILY LOG SYSTEM ───
 const LOG_SK = 'ibremy2026_dailylogs';
 const SNAPSHOT_SK = 'ibremy2026_snapshot';
@@ -863,7 +923,7 @@ function getLogs(){
   try{ return JSON.parse(localStorage.getItem(LOG_SK) || '[]'); }catch(e){ return []; }
 }
 function saveLogs(logs){
-  try{ localStorage.setItem(LOG_SK, JSON.stringify(logs)); }catch(e){}
+  try{ localStorage.setItem(LOG_SK, JSON.stringify(logs)); showSaveToast(); }catch(e){}
 }
 function getSnapshot(){
   try{ return JSON.parse(localStorage.getItem(SNAPSHOT_SK) || '{}'); }catch(e){ return {}; }
@@ -872,10 +932,9 @@ function saveSnapshot(snap){
   try{ localStorage.setItem(SNAPSHOT_SK, JSON.stringify(snap)); }catch(e){}
 }
 
-// Returns items ticked since last snapshot
 function getNewItemsSinceSnapshot(){
   const snap = getSnapshot();
-  const newItems = {}; // subject -> [{label, sectionName}]
+  const newItems = {};
   SUBJECTS.forEach(sub => {
     sub.sections.forEach((sec, si) => {
       sec.items.forEach((item, ii) => {
@@ -907,13 +966,27 @@ function formatDateShort(d){
   const pad = n => String(n).padStart(2,'0');
   return `${pad(d.getDate())} ${months[d.getMonth()]} ${d.getFullYear()} — ${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
+function formatDateFromISO(isoStr){
+  const d = new Date(isoStr + 'T12:00:00');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  return `${days[d.getDay()]} ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+function updateLogBadge(){
+  const count = countNewItems();
+  const badge = document.getElementById('logBadge');
+  if(badge){
+    if(count > 0){ badge.style.display = 'inline-block'; badge.textContent = count; }
+    else { badge.style.display = 'none'; }
+  }
+}
 
 function openLogModal(){
   const overlay = document.getElementById('logOverlay');
   overlay.classList.add('open');
-  // Set date
   document.getElementById('logModalDate').textContent = formatDateFull(new Date()).toUpperCase();
-  refreshLogModal();
+  refreshAutoTab();
 }
 
 function closeLogModal(e){
@@ -921,43 +994,33 @@ function closeLogModal(e){
   document.getElementById('logOverlay').classList.remove('open');
 }
 
-function refreshLogModal(){
+function refreshAutoTab(){
   const newItems = getNewItemsSinceSnapshot();
   const count = Object.values(newItems).reduce((a,s) => a + s.items.length, 0);
   document.getElementById('logTodayCount').textContent = count;
   document.getElementById('logTodaySub').textContent = count === 1 ? 'item ticked since last log' : 'items ticked since last log';
-
   const btn = document.getElementById('logGenBtn');
   btn.disabled = count === 0;
   btn.textContent = count === 0 ? '— Nothing new to log yet —' : '✦ Save today\'s summary';
-
-  // Update badge on FAB
-  const badge = document.getElementById('logBadge');
-  if(count > 0){ badge.style.display = 'inline-block'; badge.textContent = count; }
-  else { badge.style.display = 'none'; }
-
-  // Render history
-  renderHistory();
+  updateLogBadge();
 }
 
 function generateDailyLog(){
   const newItems = getNewItemsSinceSnapshot();
   const count = Object.values(newItems).reduce((a,s) => a + s.items.length, 0);
   if(count === 0) return;
-
   const now = new Date();
   const log = {
     date: now.toISOString(),
     dateLabel: formatDateShort(now),
+    dateISO: now.toISOString().split('T')[0],
     count: count,
-    subjects: newItems
+    subjects: newItems,
+    type: 'auto'
   };
-
   const logs = getLogs();
-  logs.unshift(log); // newest first
+  logs.unshift(log);
   saveLogs(logs);
-
-  // Update snapshot — mark all currently checked items as snapshotted
   const newSnap = {};
   SUBJECTS.forEach(sub => {
     sub.sections.forEach((sec, si) => {
@@ -968,10 +1031,8 @@ function generateDailyLog(){
     });
   });
   saveSnapshot(newSnap);
-
-  // Show confirmation and refresh
   showSummaryCard(log);
-  refreshLogModal();
+  refreshAutoTab();
 }
 
 function showSummaryCard(log){
@@ -980,51 +1041,50 @@ function showSummaryCard(log){
 }
 
 function renderSummaryCardHTML(log, isNew){
-  const cols = COLS;
   let subjectBlocks = '';
   Object.entries(log.subjects).forEach(([subId, subData]) => {
-    const col = cols[subData.col || subId] || '#999';
+    const col = COLS[subData.col || subId] || '#999';
     const itemLines = subData.items.map(it => {
-      // Truncate long labels for readability
-      const shortLabel = it.label.length > 90 ? it.label.substring(0,90) + '…' : it.label;
-      return `<div style="padding:2px 0;border-bottom:1px solid var(--border);margin-bottom:2px;font-size:11px;color:var(--text);line-height:1.5">${shortLabel}</div>`;
+      const shortLabel = (it.label||it).length > 90 ? (it.label||it).substring(0,90) + '…' : (it.label||it);
+      return `<div style="padding:3px 0;border-bottom:1px solid var(--border);font-size:11px;color:var(--text);line-height:1.5;font-family:'DM Sans',sans-serif">${shortLabel}</div>`;
     }).join('');
     subjectBlocks += `
       <div style="padding:10px 16px;border-bottom:1px solid var(--border)">
         <div style="display:flex;align-items:center;gap:7px;margin-bottom:6px">
           <div style="width:6px;height:6px;border-radius:50%;background:${col};flex-shrink:0"></div>
-          <div style="font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:${col}">${subData.name}</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:${col};font-family:'DM Sans',sans-serif">${subData.name}</div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--dim);margin-left:auto">${subData.items.length} item${subData.items.length!==1?'s':''}</div>
         </div>
         ${itemLines}
       </div>`;
   });
-
-  const newLabel = isNew ? '<span style="font-size:9px;font-weight:700;color:var(--econ);letter-spacing:.06em;text-transform:uppercase;background:rgba(61,186,113,.12);border-radius:4px;padding:2px 6px">Saved</span>' : '';
-
+  const typeTag = log.type === 'manual' ? '<span style="font-size:9px;font-weight:700;color:var(--ita);letter-spacing:.06em;text-transform:uppercase;background:rgba(245,180,41,.12);border-radius:4px;padding:2px 6px">Manual</span>' : (isNew ? '<span style="font-size:9px;font-weight:700;color:var(--econ);letter-spacing:.06em;text-transform:uppercase;background:rgba(61,186,113,.12);border-radius:4px;padding:2px 6px">Saved</span>' : '');
+  const noteBlock = log.note ? `<div style="padding:8px 16px;border-bottom:1px solid var(--border);font-size:11px;color:var(--dim);font-style:italic;font-family:'DM Sans',sans-serif;line-height:1.5">"${log.note}"</div>` : '';
   return `
     <div style="margin:0 22px 16px;background:var(--s2);border:1px solid var(--border2);border-radius:12px;overflow:hidden;animation:slideUp .2s ease">
       <div style="padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)">
         <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;flex:1;color:var(--text)">${log.dateLabel}</div>
         <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;background:rgba(61,186,113,.12);color:var(--econ);border-radius:6px;padding:2px 7px">${log.count} done</div>
-        ${newLabel}
+        ${typeTag}
       </div>
+      ${noteBlock}
       ${subjectBlocks}
       <div style="padding:10px 16px">
-        <button onclick="copyLogToClipboard(this)" style="width:100%;padding:8px 0;background:none;border:1px solid var(--border2);border-radius:8px;color:var(--dim);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;cursor:pointer;transition:.13s;letter-spacing:.03em">Copy to clipboard</button>
+        <button onclick="copyLogToClipboard(this,0)" style="width:100%;padding:8px 0;background:none;border:1px solid var(--border2);border-radius:8px;color:var(--dim);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;cursor:pointer;transition:.13s;letter-spacing:.03em">Copy to clipboard</button>
       </div>
     </div>`;
 }
 
-function copyLogToClipboard(btn){
+function copyLogToClipboard(btn, idx){
   const logs = getLogs();
-  if(!logs.length) return;
-  const log = logs[0];
-  let text = `IB Study Log — ${log.dateLabel}\n`;
-  text += `${log.count} item${log.count!==1?'s':''} completed\n\n`;
+  const log = logs[idx] || logs[0];
+  if(!log) return;
+  let text = `IB Study Log — ${log.dateLabel}\n${log.count} item${log.count!==1?'s':''} completed\n`;
+  if(log.note) text += `Note: ${log.note}\n`;
+  text += '\n';
   Object.entries(log.subjects).forEach(([_, subData]) => {
     text += `${subData.name.toUpperCase()}\n`;
-    subData.items.forEach(it => { text += `  • ${it.label}\n`; });
+    subData.items.forEach(it => { text += `  • ${it.label||it}\n`; });
     text += '\n';
   });
   navigator.clipboard.writeText(text).then(() => {
@@ -1033,6 +1093,150 @@ function copyLogToClipboard(btn){
   }).catch(() => { btn.textContent = 'Copy failed'; });
 }
 
+// ─── MANUAL LOG EDITOR ───
+let mleSelections = {}; // { subId_si_ii: true }
+
+function buildManualLogEditor(){
+  const wrap = document.getElementById('mleSubjectsWrap');
+  if(!wrap) return;
+  wrap.innerHTML = '';
+  SUBJECTS.forEach(sub => {
+    const group = document.createElement('div');
+    group.className = 'mle-subject-group';
+    const headEl = document.createElement('div');
+    headEl.className = 'mle-subj-head';
+    headEl.innerHTML = `
+      <div class="mle-subj-dot" style="background:${COLS[sub.col]}"></div>
+      <div class="mle-subj-name">${sub.name}</div>
+      <div class="mle-subj-cnt" id="mle-cnt-${sub.id}">0 selected</div>
+      <div class="mle-subj-arr" id="mle-arr-${sub.id}">▾</div>`;
+    const itemsEl = document.createElement('div');
+    itemsEl.className = 'mle-subj-items';
+    itemsEl.id = `mle-items-${sub.id}`;
+
+    headEl.onclick = () => {
+      const open = itemsEl.classList.toggle('open');
+      document.getElementById(`mle-arr-${sub.id}`).style.transform = open ? 'rotate(180deg)' : '';
+    };
+
+    sub.sections.forEach((sec, si) => {
+      const secLbl = document.createElement('div');
+      secLbl.style.cssText = 'font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dimmer);padding:10px 14px 4px;font-family:"DM Sans",sans-serif';
+      secLbl.textContent = sec.s;
+      itemsEl.appendChild(secLbl);
+
+      sec.items.forEach((item, ii) => {
+        const mleKey = `${sub.id}_${si}_${ii}`;
+        const row = document.createElement('div');
+        row.className = 'mle-item-row';
+        row.innerHTML = `<input type="checkbox" class="mle-item-cb" id="mle-cb-${mleKey}" data-key="${mleKey}"><label class="mle-item-label" for="mle-cb-${mleKey}">${item.length > 85 ? item.substring(0,85)+'…' : item}</label>`;
+        const cb = row.querySelector('input');
+        cb.addEventListener('change', function(){
+          if(this.checked) mleSelections[mleKey] = true;
+          else delete mleSelections[mleKey];
+          updateMleCount(sub.id);
+          updateMleTotalCount();
+        });
+        itemsEl.appendChild(row);
+      });
+    });
+
+    group.appendChild(headEl);
+    group.appendChild(itemsEl);
+    wrap.appendChild(group);
+  });
+}
+
+function updateMleCount(subId){
+  const sub = SUBJECTS.find(s => s.id === subId);
+  let cnt = 0;
+  sub.sections.forEach((sec, si) => {
+    sec.items.forEach((_, ii) => {
+      if(mleSelections[`${subId}_${si}_${ii}`]) cnt++;
+    });
+  });
+  const el = document.getElementById(`mle-cnt-${subId}`);
+  if(el) el.textContent = cnt > 0 ? `${cnt} selected` : '0 selected';
+}
+
+function updateMleTotalCount(){
+  const total = Object.keys(mleSelections).length;
+  const el = document.getElementById('mleTotalCount');
+  if(el) el.textContent = `(${total} selected)`;
+}
+
+function clearManualSelections(){
+  mleSelections = {};
+  document.querySelectorAll('.mle-item-cb').forEach(cb => { cb.checked = false; });
+  SUBJECTS.forEach(sub => updateMleCount(sub.id));
+  updateMleTotalCount();
+}
+
+function saveManualLog(){
+  const count = Object.keys(mleSelections).length;
+  if(count === 0){
+    alert('Please select at least one topic before saving.');
+    return;
+  }
+  const dateInput = document.getElementById('mleDate').value;
+  const note = document.getElementById('mleNote').value.trim();
+  if(!dateInput){
+    alert('Please select a date.');
+    return;
+  }
+
+  // Build subjects structure from selections
+  const subjects = {};
+  Object.keys(mleSelections).forEach(key => {
+    const parts = key.split('_');
+    const subId = parts[0];
+    const si = parseInt(parts[1]);
+    const ii = parseInt(parts[2]);
+    const sub = SUBJECTS.find(s => s.id === subId);
+    if(!sub) return;
+    const item = sub.sections[si].items[ii];
+    if(!subjects[subId]) subjects[subId] = { name: sub.name, col: sub.col, items: [] };
+    subjects[subId].items.push({ label: item, section: sub.sections[si].s });
+  });
+
+  const dateObj = new Date(dateInput + 'T12:00:00');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const pad = n => String(n).padStart(2,'0');
+  const dateLabel = `${pad(dateObj.getDate())} ${months[dateObj.getMonth()]} ${dateObj.getFullYear()} — Manual`;
+
+  const log = {
+    date: dateObj.toISOString(),
+    dateLabel: dateLabel,
+    dateISO: dateInput,
+    count: count,
+    subjects: subjects,
+    note: note || null,
+    type: 'manual'
+  };
+
+  const logs = getLogs();
+  // Insert in correct date order
+  let inserted = false;
+  for(let i = 0; i < logs.length; i++){
+    if(new Date(log.date) >= new Date(logs[i].date)){
+      logs.splice(i, 0, log);
+      inserted = true;
+      break;
+    }
+  }
+  if(!inserted) logs.push(log);
+  saveLogs(logs);
+
+  // Clear form
+  clearManualSelections();
+  document.getElementById('mleNote').value = '';
+
+  // Switch to history to show it
+  const histTab = document.querySelector('.log-tab[onclick="switchLogTab(\'history\',this)"]');
+  switchLogTab('history', histTab);
+}
+
+// ─── HISTORY ───
 function renderHistory(){
   const logs = getLogs();
   const container = document.getElementById('logHistoryList');
@@ -1043,31 +1247,33 @@ function renderHistory(){
   container.innerHTML = logs.map((log, i) => {
     const subjectPills = Object.entries(log.subjects).map(([subId, subData]) => {
       const col = COLS[subData.col || subId] || '#999';
-      return `<span style="font-size:9px;font-weight:700;background:rgba(150,150,150,.1);border-radius:4px;padding:1px 5px;color:var(--dim)">${subData.name.split(' ')[0]}: ${subData.items.length}</span>`;
+      return `<span style="font-size:9px;font-weight:700;background:rgba(150,150,150,.1);border-radius:4px;padding:1px 5px;color:var(--dim);font-family:'DM Sans',sans-serif">${subData.name.split(' ')[0]}: ${subData.items.length}</span>`;
     }).join(' ');
-
+    const manualTag = log.type === 'manual' ? '<span style="font-size:9px;color:var(--ita);font-family:\'JetBrains Mono\',monospace;font-weight:600">manual</span>' : '';
     let subjectBlocks = '';
     Object.entries(log.subjects).forEach(([subId, subData]) => {
       const col = COLS[subData.col || subId] || '#999';
       subjectBlocks += `
         <div style="margin-bottom:8px">
-          <div style="font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:${col};margin-bottom:4px">${subData.name}</div>
-          ${subData.items.map(it => `<div style="font-size:11px;color:var(--text);line-height:1.5;padding:1px 0;border-bottom:1px solid var(--border)">${it.label.length>80?it.label.substring(0,80)+'…':it.label}</div>`).join('')}
+          <div style="font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${col};margin-bottom:4px;font-family:'DM Sans',sans-serif">${subData.name}</div>
+          ${subData.items.map(it => `<div style="font-size:11px;color:var(--text);line-height:1.5;padding:1px 0;border-bottom:1px solid var(--border);font-family:'DM Sans',sans-serif">${(it.label||it).length>80?(it.label||it).substring(0,80)+'…':(it.label||it)}</div>`).join('')}
         </div>`;
     });
-
+    const noteHtml = log.note ? `<div style="font-size:11px;color:var(--dim);font-style:italic;margin-bottom:10px;font-family:'DM Sans',sans-serif;line-height:1.5">"${log.note}"</div>` : '';
     return `
       <div class="log-hist-entry">
         <div class="log-hist-head" onclick="toggleHistEntry(${i})">
           <div class="log-hist-date">${log.dateLabel}</div>
+          ${manualTag}
           <div class="log-hist-cnt">${log.count}</div>
           <div class="log-hist-arr" id="hist-arr-${i}">▾</div>
         </div>
         <div class="log-hist-body" id="hist-body-${i}">
           ${subjectPills ? `<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap">${subjectPills}</div>` : ''}
+          ${noteHtml}
           ${subjectBlocks}
-          <button onclick="copyHistLog(${i})" style="margin-top:6px;width:100%;padding:6px 0;background:none;border:1px solid var(--border2);border-radius:7px;color:var(--dim);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;cursor:pointer;transition:.13s">Copy this log</button>
-          <button onclick="deleteHistLog(${i})" style="margin-top:4px;width:100%;padding:6px 0;background:none;border:1px solid rgba(239,68,68,.2);border-radius:7px;color:rgba(239,68,68,.5);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;cursor:pointer;transition:.13s">Delete</button>
+          <button onclick="copyHistLog(${i})" style="margin-top:6px;width:100%;padding:6px 0;background:none;border:1px solid var(--border2);border-radius:7px;color:var(--dim);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;cursor:pointer;transition:.13s">Copy this log</button>
+          <button onclick="deleteHistLog(${i})" style="margin-top:4px;width:100%;padding:6px 0;background:none;border:1px solid rgba(239,68,68,.2);border-radius:7px;color:rgba(239,68,68,.5);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;cursor:pointer;transition:.13s">Delete</button>
         </div>
       </div>`;
   }).join('') + '<div style="height:20px"></div>';
@@ -1084,53 +1290,45 @@ function copyHistLog(i){
   const logs = getLogs();
   const log = logs[i];
   if(!log) return;
-  let text = `IB Study Log — ${log.dateLabel}\n${log.count} items completed\n\n`;
+  let text = `IB Study Log — ${log.dateLabel}\n${log.count} items completed\n`;
+  if(log.note) text += `Note: ${log.note}\n`;
+  text += '\n';
   Object.entries(log.subjects).forEach(([_, subData]) => {
     text += `${subData.name.toUpperCase()}\n`;
-    subData.items.forEach(it => { text += `  • ${it.label}\n`; });
+    subData.items.forEach(it => { text += `  • ${it.label||it}\n`; });
     text += '\n';
   });
   navigator.clipboard.writeText(text).catch(()=>{});
 }
 
 function deleteHistLog(i){
+  if(!confirm('Delete this log entry?')) return;
   const logs = getLogs();
   logs.splice(i, 1);
   saveLogs(logs);
   renderHistory();
 }
 
-// Update the existing save() call to also refresh log badge
-const _origSave = save;
-// Override checkbox handler to refresh badge
-document.addEventListener('change', function(e){
-  if(e.target && e.target.type === 'checkbox'){
-    // slight delay to let sv update
-    setTimeout(() => {
-      const count = countNewItems();
-      const badge = document.getElementById('logBadge');
-      if(badge){
-        if(count > 0){ badge.style.display = 'inline-block'; badge.textContent = count; }
-        else { badge.style.display = 'none'; }
-      }
-    }, 50);
-  }
-});
-
-// Close modal on ESC
+// ─── EVENT LISTENERS ───
 document.addEventListener('keydown', function(e){
   if(e.key === 'Escape') document.getElementById('logOverlay').classList.remove('open');
 });
 
+// Save on page visibility change (tab switch / phone lock)
+document.addEventListener('visibilitychange', function(){
+  if(document.visibilityState === 'hidden'){
+    try{ localStorage.setItem(SK, JSON.stringify(sv)); }catch(e){}
+  }
+});
+
+// Save on beforeunload
+window.addEventListener('beforeunload', function(){
+  try{ localStorage.setItem(SK, JSON.stringify(sv)); }catch(e){}
+});
+
 // ─── BOOT ───
 init();
-
-// Init badge after boot
-setTimeout(() => {
-  const count = countNewItems();
-  const badge = document.getElementById('logBadge');
-  if(count > 0){ badge.style.display = 'inline-block'; badge.textContent = count; }
-}, 100);
+setTimeout(updateLogBadge, 100);
 </script>
 </body>
 </html>
